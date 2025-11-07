@@ -9,12 +9,22 @@ export default function Home() {
           <p className="text-gray-600">nobody knows me</p>
         </div>
 
-        <div className="space-y-4 text-gray-700 leading-relaxed">
+        <div className="space-y-6 text-gray-700 leading-relaxed">
           <p>
-            Self driven, generally curious and i think i can adapt really quick, comfortable in building tools from scratch when existing solutions don't meet the requirements. Quick learner with curiosity driven approach to learn tech.
+            the system is broken. we build anyway.
           </p>
           <p>
-            Building with Go, Kotlin, JavaScript, Solidity. Working on backend, full-stack, distributed systems, and blockchain applications.
+            code is the only truth that matters. everything else is noise.
+          </p>
+          <p>
+            i build tools because existing ones don't cut it. i learn because curiosity kills the cat but what doesnt kill it makes it stronger.
+          </p>
+          <p>
+            i am not a pro but i kinda know what go, kotlin, javascript, solidity are. backend, full-stack, distributed systems, blockchain. 
+            doesn't matter what stack. what matters is solving the problem.
+          </p>
+          <p className="text-gray-500 text-sm">
+            self driven. generally curious. adapt or die.
           </p>
         </div>
 
