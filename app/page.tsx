@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -6,25 +7,35 @@ export default function Home() {
       <div className="max-w-2xl mx-auto space-y-8">
         <div className="mb-12">
           <h1 className="text-gray-900 text-2xl md:text-3xl mb-2">alvin</h1>
-          <p className="text-gray-600">nobody knows me</p>
+          <p className="text-gray-600">this is my not so cool website</p>
+        </div>
+
+        <div className="w-full h-38 aspect-video relative mb-8 overflow-hidden rounded-lg">
+          <Image
+            src="/blackhole.png"
+            alt="blackhole"
+            fill
+            className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+            priority
+          />
         </div>
 
         <div className="space-y-6 text-gray-700 leading-relaxed">
           <p>
-            the system is broken. we build anyway.
+            started with taking things apart. then modding games. then realizing i could build anything.
           </p>
           <p>
-            code is the only truth that matters. everything else is noise.
+            now i write code. go, kotlin, javascript, solidity. backend, distributed systems, blockchain.
+            whatever solves the problem, at this point if i am intruged enough i will do anything.
           </p>
           <p>
-            i build tools because existing ones don't cut it. i learn because curiosity kills the cat but what doesnt kill it makes it stronger.
+            i just mess with my computer all day, i build things, i learn things, i break things, i fix things.
           </p>
           <p>
-            i am not a pro but i kinda know what go, kotlin, javascript, solidity are. backend, full-stack, distributed systems, blockchain. 
-            doesn't matter what stack. what matters is solving the problem.
+            i think as a society we are doomed and ai is gonna take over the world sooner or later but i'll still do what i do because its funhh, and if they ever take over i am with themm....
           </p>
           <p className="text-gray-500 text-sm">
-            self driven. generally curious. adapt or die.
+            curiosity doesn't kill the cat but it sure as hell makes it stronger.
           </p>
         </div>
 
