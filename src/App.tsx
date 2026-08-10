@@ -25,6 +25,8 @@ const interests = [
 ];
 
 function App() {
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <div className="min-h-screen bg-white font-[Arial,Helvetica,sans-serif] text-[15px] leading-[1.45] text-[#222]">
       <aside className="px-5 pt-7 md:fixed md:right-7 md:top-6 md:w-36 md:p-0 md:text-right">
@@ -36,7 +38,7 @@ function App() {
           <br className="hidden md:block" />
           <a className={linkClass} href="#interests">interests</a>
           <br className="hidden md:block" />
-          <a className={linkClass} href="/writings/">writings</a>
+          <a className={linkClass} href={`${baseUrl}writings/`}>writings</a>
           <br className="hidden md:block" />
           <a className={linkClass} href="#elsewhere">elsewhere</a>
         </nav>
@@ -45,7 +47,7 @@ function App() {
       <main className="ml-5 w-[calc(100%-40px)] max-w-[560px] pb-24 pt-12 sm:ml-[6.5vw] md:pt-14">
         <section id="about" className="scroll-mt-8">
           <img
-            src="/blackhole.png"
+            src={`${baseUrl}blackhole.png`}
             alt="a black hole"
             className="mb-5 h-[150px] w-[150px] border border-black/10 object-cover grayscale"
           />

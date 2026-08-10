@@ -1,7 +1,8 @@
 # alvinliju.me
 
-The source for [alvinliju.me](https://alvinliju.me), my personal corner of the
-internet.
+The source for
+[alvinliju.github.io/alvinliju.me](https://alvinliju.github.io/alvinliju.me/),
+my personal corner of the internet.
 
 This is intentionally a small, text-first website. It contains an about page
 and a writings index without a CMS, component library, analytics layer, or
@@ -79,7 +80,7 @@ Every piece of writing should be its own HTML page at
 3. Add `writings/<slug>/index.html` and load the new entry file from it.
 4. Register that HTML file under `build.rollupOptions.input` in
    `vite.config.ts`.
-5. Add its title and URL to the `writings` array in `src/Writings.tsx`.
+5. Add its title and slug to the `writings` array in `src/Writings.tsx`.
 
 The writings index deliberately displays only linked titles. Dates, excerpts,
 tags, cards, and embedded article bodies should stay out of the index unless
@@ -95,3 +96,10 @@ the direction of the site changes later.
 
 Keep additions simple. If a feature can be expressed as a link, paragraph, or
 standalone document, it probably does not need a new dependency.
+
+## Deployment
+
+Pushes to `main` are deployed automatically to GitHub Pages at
+[alvinliju.github.io/alvinliju.me](https://alvinliju.github.io/alvinliju.me/).
+The deployment workflow builds the Vite project with the repository subpath as
+its production base and publishes the contents of `dist/`.

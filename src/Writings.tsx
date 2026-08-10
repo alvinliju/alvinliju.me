@@ -1,17 +1,19 @@
 const linkClass =
   "text-[#0645ad] underline decoration-1 underline-offset-2 hover:text-[#c00000]";
 
-const writings: Array<{ title: string; href: string }> = [];
+const writings: Array<{ title: string; slug: string }> = [];
 
 function Writings() {
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <div className="min-h-screen bg-white font-[Arial,Helvetica,sans-serif] text-[15px] leading-[1.45] text-[#222]">
       <aside className="px-5 pt-7 md:fixed md:right-7 md:top-6 md:w-36 md:p-0 md:text-right">
         <p className="font-semibold">alvin liju</p>
         <nav className="mt-1 flex flex-wrap gap-x-3 md:block" aria-label="site navigation">
-          <a className={linkClass} href="/">about</a>
+          <a className={linkClass} href={baseUrl}>about</a>
           <br className="hidden md:block" />
-          <a className={linkClass} href="/writings/">writings</a>
+          <a className={linkClass} href={`${baseUrl}writings/`}>writings</a>
         </nav>
       </aside>
 
@@ -24,8 +26,8 @@ function Writings() {
         <section className="mt-10" aria-label="writing index">
           <ul className="space-y-2">
             {writings.map((writing) => (
-              <li key={writing.href}>
-                <a className={linkClass} href={writing.href}>
+              <li key={writing.slug}>
+                <a className={linkClass} href={`${baseUrl}writings/${writing.slug}/`}>
                   {writing.title}
                 </a>
               </li>

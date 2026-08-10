@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 const rootDirectory = fileURLToPath(new URL(".", import.meta.url));
 
 export default defineConfig({
+  base: process.env.GITHUB_ACTIONS ? "/alvinliju.me/" : "/",
   plugins: [react(), tailwindcss()],
   build: {
     rollupOptions: {
