@@ -1,8 +1,7 @@
 # alvinliju.me
 
-The source for
-[alvinliju.github.io/alvinliju.me](https://alvinliju.github.io/alvinliju.me/),
-my personal corner of the internet.
+The source for [alvinliju.me](https://alvinliju.me), my personal corner of the
+internet.
 
 This is intentionally a small, text-first website. It contains an about page
 and a writings index without a CMS, component library, analytics layer, or
@@ -99,7 +98,9 @@ standalone document, it probably does not need a new dependency.
 
 ## Deployment
 
-Pushes to `main` are deployed automatically to GitHub Pages at
-[alvinliju.github.io/alvinliju.me](https://alvinliju.github.io/alvinliju.me/).
-The deployment workflow builds the Vite project with the repository subpath as
-its production base and publishes the contents of `dist/`.
+Pushes to `main` are deployed automatically to GitHub Pages and served from the
+custom domain [alvinliju.me](https://alvinliju.me). The deployment workflow
+builds the Vite project and publishes the contents of `dist/`.
+
+The required apex and `www` records are stored in
+`dns/alvinliju.me.zone` as a BIND-compatible DNS import file.
