@@ -36,6 +36,8 @@ function App() {
           <br className="hidden md:block" />
           <a className={linkClass} href="#interests">interests</a>
           <br className="hidden md:block" />
+          <a className={linkClass} href="/writings/">writings</a>
+          <br className="hidden md:block" />
           <a className={linkClass} href="#elsewhere">elsewhere</a>
         </nav>
       </aside>
