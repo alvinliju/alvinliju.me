@@ -14,6 +14,7 @@ export default defineConfig({
       input: {
         about: resolve(rootDirectory, "index.html"),
         writings: resolve(rootDirectory, "writings/index.html"),
+        stash: resolve(rootDirectory, "a7f3c9/index.html"),
       },
     },
   },
