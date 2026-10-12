@@ -130,7 +130,7 @@ function App() {
               github
             </a>
             , on {" "}
-            <a className={linkClass} href="https://x.com/e3he0" target="_blank" rel="noreferrer">
+            <a className={linkClass} href="https://x.com/notrlyalvin" target="_blank" rel="noreferrer">
               x
             </a>
             , or reach me by {" "}
